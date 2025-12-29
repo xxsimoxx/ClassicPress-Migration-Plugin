@@ -1071,7 +1071,7 @@ function classicpress_show_advanced_migration_controls( $ok = true ) {
 					</label>
 				</th>
 				<td>
-					<input type="text" id="cp-build-url" name="_build_url">
+					<input type="url" id="cp-build-url" name="_build_url" required>
 				</td>
 			</tr>
 		</table>
