@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-01-17T13:08:46+00:00\n"
+"POT-Creation-Date: 2026-01-17T13:10:41+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: switch-to-classicpress\n"
@@ -95,8 +95,8 @@ msgstr ""
 msgid "Sorry, this plugin doesn't support sites hosted on WordPress.com."
 msgstr ""
 
-#: lib/admin-page.php:374
-msgid "In order to switch to ClassicPress, you'll need to <a href=\"https://move.wordpress.com/\">move to a self-hosted WordPress site</a> first."
+#: lib/admin-page.php:373
+msgid "In order to switch to ClassicPress, you'll need to move to a self-hosted WordPress site first."
 msgstr ""
 
 #: lib/admin-page.php:388
@@ -325,39 +325,43 @@ msgstr ""
 msgid "WARNING:"
 msgstr ""
 
-#: lib/admin-page.php:996
-msgid "If all requirements for your custom version have been met, then migration should complete.</p><p>That does not mean it will work in every case and<strong class=\"cp-emphasis\"> Older Versions may have Password or Security Issues!</strong></p>"
+#: lib/admin-page.php:995
+msgid "If all requirements for your custom version have been met, then migration should complete."
 msgstr ""
 
 #: lib/admin-page.php:1002
-msgid "Please, make a <strong class=\"cp-emphasis\">Complete Backup of your Site Files and Database</strong> before using this tool<strong class=\"cp-emphasis\"> At Your Own Risk!</strong>"
+msgid "That does not mean it will work in every case and <strong class=\"cp-emphasis\">Older Versions may have Password or Security Issues!</strong>"
 msgstr ""
 
-#: lib/admin-page.php:1010
+#: lib/admin-page.php:1008
+msgid "Please, make a <strong class=\"cp-emphasis\">Complete Backup of your Site Files and Database</strong> before using this tool <strong class=\"cp-emphasis\">At Your Own Risk!</strong>"
+msgstr ""
+
+#: lib/admin-page.php:1016
 msgid "* MIGRATING TO WP v4.9 SHOULD BE A LAST RESORT AND IS DONE AT YOUR OWN RISK!"
 msgstr ""
 
-#: lib/admin-page.php:1019
+#: lib/admin-page.php:1025
 msgid "Enter or Select a Custom Build URL"
 msgstr ""
 
-#: lib/admin-page.php:1021
+#: lib/admin-page.php:1027
 msgid "Please Select an Option"
 msgstr ""
 
-#: lib/admin-page.php:1022
+#: lib/admin-page.php:1028
 msgid "ClassicPress Builds"
 msgstr ""
 
-#: lib/admin-page.php:1042
+#: lib/admin-page.php:1048
 msgid "WordPress Builds"
 msgstr ""
 
-#: lib/admin-page.php:1067
+#: lib/admin-page.php:1073
 msgid "Build URL:"
 msgstr ""
 
-#: lib/admin-page.php:1080
+#: lib/admin-page.php:1086
 msgid "Perform the Custom Migration now!"
 msgstr ""
 
