@@ -283,7 +283,7 @@ function classicpress_ignore_wp_version_checkbox_callback() {
 		'</a>'
 	);
 }
- 
+
 add_action( 'admin_init', 'classicpress_ignore_wp_version_settings_init' );
 
 /**
@@ -368,9 +368,9 @@ function classicpress_check_can_migrate() {
 				); ?>
 			</p>
 			<p>
-				<?php echo wp_kses_post(
-					__( 'In order to switch to ClassicPress, you\'ll need to <a href="https://move.wordpress.com/">move to a self-hosted WordPress site</a> first.',
-					'switch-to-classicpress' )
+				<?php esc_html_e(
+					'In order to switch to ClassicPress, you\'ll need to move to a self-hosted WordPress site first.',
+					'switch-to-classicpress'
 				); ?>
 			</p>
 		</div>
@@ -771,7 +771,7 @@ function classicpress_show_migration_controls() {
 	<p class="cp-migration-info">
 		<?php echo wp_kses_post(
 			'<strong class="cp-emphasis">' . __( 'Please make a Complete Backup of your Site Files and Database before you continue!', 'switch-to-classicpress' ) . '</strong>'
-		); ?>	
+		); ?>
 	</p>
 	<p class="cp-migration-info">
 		<?php echo wp_kses_post(
@@ -989,14 +989,20 @@ function classicpress_show_advanced_migration_controls( $ok = true ) {
 				</th>
 				<td>
 					<p>
+						<?php esc_html_e(
+							'If all requirements for your custom version have been met, then migration should complete.',
+							'switch-to-classicpress'
+						); ?>
+					</p>
+					<p>
 						<?php echo wp_kses_post(
-							__( 'If all requirements for your custom version have been met, then migration should complete.</p><p>That does not mean it will work in every case and<strong class="cp-emphasis"> Older Versions may have Password or Security Issues!</strong></p>',
+							__( 'That does not mean it will work in every case and <strong class="cp-emphasis">Older Versions may have Password or Security Issues!</strong>',
 							'switch-to-classicpress' )
 						); ?>
 					</p>
 					<p>
 						<?php echo wp_kses_post(
-							__( 'Please, make a <strong class="cp-emphasis">Complete Backup of your Site Files and Database</strong> before using this tool<strong class="cp-emphasis"> At Your Own Risk!</strong>',
+							__( 'Please, make a <strong class="cp-emphasis">Complete Backup of your Site Files and Database</strong> before using this tool <strong class="cp-emphasis">At Your Own Risk!</strong>',
 							'switch-to-classicpress' )
 						); ?>
 					</p>
