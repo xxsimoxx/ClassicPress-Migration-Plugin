@@ -315,6 +315,7 @@ function classicpress_check_can_migrate() {
 			if (strpos($cp_version, 'migration')) {
 				printf(
 					wp_kses_post(
+						/* translators: %s: ClassicPress version */
 						'<h2>' . __( 'You\'re almost done switching to ClassicPress v%s!', 'switch-to-classicpress' ) . '</h2>'
 					),
 					esc_html( preg_replace( '#[+-].*$#', '', $cp_version ) )
@@ -328,6 +329,7 @@ function classicpress_check_can_migrate() {
 			} else {
 				printf(
 					wp_kses_post(
+						/* translators: %s: ClassicPress version */
 						'<h2>' . __( 'Good job, you\'re running ClassicPress v%s!', 'switch-to-classicpress' ) . '</h2>'
 					),
 					esc_html( preg_replace( '#[+-].*$#', '', $cp_version ) )
@@ -764,6 +766,7 @@ function classicpress_show_migration_controls() {
 ?>
 	<h2 class="cp-migration-info cp-migration-ready">
 		<?php echo wp_kses_post( sprintf(
+			/* translators: %s: ClassicPress version to switch to */
 			__( 'It looks like you\'re ready to switch to ClassicPress v%s!', 'switch-to-classicpress' ),
 			$cp_cv
 		) ); ?>
