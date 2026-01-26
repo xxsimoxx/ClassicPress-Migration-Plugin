@@ -1027,7 +1027,7 @@ function classicpress_show_advanced_migration_controls( $ok = true ) {
 						<option value="<?php echo esc_url($cp_cv_build); ?>">ClassicPress v<?php echo esc_html($cp_cv); ?></option>
 <?php
 	}
-	if ($my_cp !== $v2_previous && substr($v2_previous, 0, 1) === substr($cp_cv, 0, 1)) {
+	if ($cp_p2_build && $my_cp !== $v2_previous && substr($v2_previous, 0, 1) === substr($cp_cv, 0, 1)) {
 ?>
 						<option value="<?php echo esc_url($cp_p2_build); ?>">ClassicPress v<?php echo esc_html($v2_previous); ?></option>
 <?php
@@ -1037,7 +1037,7 @@ function classicpress_show_advanced_migration_controls( $ok = true ) {
 						<option value="<?php echo esc_url($cp_v1_build); ?>">ClassicPress v<?php echo esc_html($cp_v1); ?></option>
 <?php
 	}
-	if ($my_cp !== $v1_previous) {
+	if ($my_cp !== $v1_previous && $cp_p1_build) {
 ?>
 						<option value="<?php echo esc_url($cp_p1_build); ?>">ClassicPress v<?php echo esc_html($v1_previous); ?></option>
 <?php } ?>
@@ -1074,7 +1074,7 @@ function classicpress_show_advanced_migration_controls( $ok = true ) {
 					</label>
 				</th>
 				<td>
-					<input type="text" id="cp-build-url" name="_build_url">
+					<input type="url" id="cp-build-url" name="_build_url" required>
 				</td>
 			</tr>
 		</table>
