@@ -37,7 +37,7 @@ To **install ClassicPress on a current WordPress site** (switch a current WordPr
 
 At this point it is safe to delete the “Switch to ClassicPress” plugin.
 
-If something is wrong, please let us know in [our support forum](https://forums.classicpress.net/c/support/migration-plugin).
+If something is wrong, please let us know in [our support forum](https://forums.classicpress.net/c/support).
 
 ## Frequently Asked Questions
 
@@ -56,7 +56,7 @@ If you would like to migrate from a different version of WordPress **at your own
 `add_filter( 'classicpress_ignore_wp_version', '__return_true' );`
 
 With each new WordPress release, it's very helpful for us to have multiple reports of whether the migration plugin works with the new version.
-You can use the filter above to test the migration process, and you can tell us about the results of your testing [on GitHub](https://github.com/ClassicPress/ClassicPress-Migration-Plugin/issues) or [on the support subforum for the migration plugin](https://forums.classicpress.net/c/support/migration-plugin).
+You can use the filter above to test the migration process, and you can tell us about the results of your testing [on GitHub](https://github.com/ClassicPress/ClassicPress-Migration-Plugin/issues) or [our support forum](https://forums.classicpress.net/c/support/).
 
 ### I need help with something else, what should I do?
 
